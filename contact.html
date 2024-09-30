@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Nisanta Nath</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome for icons -->
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-section {
+            padding: 100px 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 80px;
+            background-color: #2e2e2e;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+        }
+        /* WhatsApp icon styling */
+        .whatsapp-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            border-radius: 50%;
+            padding: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            z-index: 100;
+            transition: background-color 0.3s;
+            animation: none;
+        }
+        .whatsapp-icon:hover {
+            background-color: #128C7E; /* Darker green on hover */
+            animation: marquee 0.5s infinite alternate; /* Start marquee animation on hover */
+        }
+
+        /* Marquee animation */
+        @keyframes marquee {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-5px); }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>Nisanta Nath</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+            <h2 style="color: #00ff66;">Contact Me</h2>
+            <p style="color: #cccccc;">I would love to hear from you! Whether you have a question or just want to chat, feel free to reach out to me through the form below.</p>
+
+            <form style="width: 100%; max-width: 600px; display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
+                <input type="text" name="name" placeholder="Your Name" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                <input type="email" name="email" placeholder="Your Email" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                <textarea name="message" rows="5" placeholder="Your Message" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+                <button type="submit" style="padding: 10px; background-color: #00ff66; border: none; border-radius: 5px; color: #fff; font-weight: bold;">Send Message</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<!-- WhatsApp Icon -->
+<a href="https://wa.me/+916909954915" class="whatsapp-icon" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Footer Section -->
+<footer>
+    <p>© 2024 Nisanta Nath. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
